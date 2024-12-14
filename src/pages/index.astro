@@ -1,24 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Wrapper from "../components/Wrapper.astro";
-import { Image } from "astro:assets";
+import ImageGrid from "../components/ImageGrid.astro";
 import { images } from "../constants/images";
 ---
 
 <Layout>
   <Wrapper>
-    <div class="grid gap-4">
-      {
-        images.map((image) => (
-          <Image
-            class="border w-full h-auto rounded-lg"
-            src={image.src}
-            alt={image.alt}
-            width={image.width}
-            height={image.height}
-          />
-        ))
-      }
-    </div>
+    <ImageGrid images={images} />
   </Wrapper>
 </Layout>

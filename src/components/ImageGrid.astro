@@ -1,0 +1,27 @@
+---
+import type { Image } from "../constants/images";
+
+interface Props {
+  images: Image[];
+}
+
+const { images = [] } = Astro.props;
+---
+
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+  {
+    images.map((image: Image, idx: number) => {
+      const isHorizontal = image.width >= image.height;
+
+      return (
+        <div class={`${isHorizontal ? "col-span-full" : "col-span-1"}`}>
+          <img
+            src={image.src}
+            alt={image.alt || `Image ${idx}`}
+            class="w-full h-auto object-cover rounded-lg"
+          />
+        </div>
+      );
+    })
+  }
+</div>
