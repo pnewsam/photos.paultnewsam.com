@@ -1,13 +1,23 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Paul T. Newsam &bull; Photos</title>
-	</head>
-	<body class="font-['Public_Sans']">
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Paul T. Newsam &bull; Photos</title>
+  </head>
+  <body class="font-['Erode',_sans-serif]">
+    <slot />
+  </body>
 </html>
+
+<style>
+  @font-face {
+    font-family: "Erode";
+    src: url("/fonts/Erode-Variable.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
