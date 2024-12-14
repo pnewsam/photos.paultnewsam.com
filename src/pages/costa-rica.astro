@@ -2,14 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import Wrapper from "../components/Wrapper.astro";
 import { Image } from "astro:assets";
-import { images } from "../constants/images";
+import { costaRicaImages } from "../constants/images";
 ---
 
 <Layout>
   <Wrapper>
     <div class="grid gap-4">
       {
-        images.map((image) => (
+        costaRicaImages.map((image) => (
           <Image
             class="border w-full h-auto rounded-lg"
             src={image.src}

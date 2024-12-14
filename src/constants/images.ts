@@ -24,9 +24,30 @@ export const images: Image[] = [
     caption: "Frogs",
     location: "Costa Rica",
   },
-  { src: "/images/3.jpg", alt: "Photo 3", width: 300, height: 300 },
-  { src: "/images/4.jpg", alt: "Photo 4", width: 300, height: 300 },
-  { src: "/images/5.jpg", alt: "Photo 5", width: 300, height: 300 },
+  {
+    src: "https://storage.paultnewsam.com/boobies_1_optimized.webp",
+    alt: "Nazca Boobies",
+    width: 1600,
+    height: 1067,
+    caption: "Nazca Boobies",
+    location: "Galapagos",
+  },
+  {
+    src: "https://storage.paultnewsam.com/heron_1_optimized.webp",
+    alt: "Heron",
+    width: 1600,
+    height: 1067,
+    caption: "Heron",
+    location: "Galapagos",
+  },
+  {
+    src: "https://storage.paultnewsam.com/heron_2_optimized.webp",
+    alt: "Heron",
+    width: 1600,
+    height: 1067,
+    caption: "Heron",
+    location: "Galapagos",
+  },
 ];
 
 export const costaRicaImages: Image[] = images.filter(
