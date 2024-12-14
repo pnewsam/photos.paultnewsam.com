@@ -1,21 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Wrapper from '../components/Wrapper.astro';
-import { Image } from 'astro:assets';
-
+import Layout from "../layouts/Layout.astro";
+import Wrapper from "../components/Wrapper.astro";
+import { Image } from "astro:assets";
+import { costaRicaImages } from "../constants/images";
 ---
 
 <Layout>
-	<Wrapper>
-		<div class="grid grid-cols-2 gap-4">
-			<Image class="border w-full h-auto rounded-lg" src="/images/1.jpg" alt="Photo 1" width={300} height={300} />
-			<Image class="border w-full h-auto rounded-lg" src="/images/2.jpg" alt="Photo 2" width={300} height={300} />
-			<Image class="border w-full h-auto rounded-lg" src="/images/3.jpg" alt="Photo 3" width={300} height={300} />
-			<Image class="border w-full h-auto rounded-lg" src="/images/4.jpg" alt="Photo 4" width={300} height={300} />
-			<Image class="border w-full h-auto rounded-lg" src="/images/5.jpg" alt="Photo 5" width={300} height={300} />
-			<Image class="border w-full h-auto rounded-lg" src="/images/6.jpg" alt="Photo 6" width={300} height={300} />
-			<Image class="border w-full h-auto rounded-lg" src="/images/7.jpg" alt="Photo 7" width={300} height={300} />
-			<Image class="border w-full h-auto rounded-lg" src="/images/8.jpg" alt="Photo 8" width={300} height={300} />
-		</div>
-	</Wrapper>
+  <Wrapper>
+    <div class="grid gap-4">
+      {
+        costaRicaImages.map((image) => (
+          <Image
+            class="border w-full h-auto rounded-lg"
+            src={image.src}
+            alt={image.alt}
+            width={image.width}
+            height={image.height}
+          />
+        ))
+      }
+    </div>
+  </Wrapper>
 </Layout>
