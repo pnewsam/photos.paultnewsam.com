@@ -25,6 +25,22 @@ export const images: Image[] = [
     location: "Costa Rica",
   },
   {
+    src: "https://storage.paultnewsam.com/hummingbird_1_optimized.webp",
+    alt: "Hummingbird",
+    width: 1600,
+    height: 1067,
+    caption: "Hummingbird",
+    location: "Costa Rica",
+  },
+  {
+    src: "https://storage.paultnewsam.com/hummingbird_2_optimized.webp",
+    alt: "Hummingbird",
+    width: 1600,
+    height: 1067,
+    caption: "Hummingbird",
+    location: "Costa Rica",
+  },
+  {
     src: "https://storage.paultnewsam.com/boobies_1_optimized.webp",
     alt: "Nazca Boobies",
     width: 1600,
