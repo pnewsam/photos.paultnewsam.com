@@ -3,11 +3,11 @@ import Sidebar from "./Sidebar.astro";
 ---
 
 <div class="grid md:grid-cols-[200px_1fr] min-h-screen">
-  <div class="md:block hidden">
+  <div class="">
     <Sidebar />
   </div>
 
-  <div class="p-8">
+  <div class="p-4 md:p-8">
     <slot />
   </div>
 </div>
